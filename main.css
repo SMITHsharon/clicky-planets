@@ -1,3 +1,49 @@
 body {
 	background-color: darkgreen;
 }
+
+.btn {
+  background: #368ac2;
+  background-image: -webkit-linear-gradient(top, #368ac2, #7f2bb8);
+  background-image: -moz-linear-gradient(top, #368ac2, #7f2bb8);
+  background-image: -ms-linear-gradient(top, #368ac2, #7f2bb8);
+  background-image: -o-linear-gradient(top, #368ac2, #7f2bb8);
+  background-image: linear-gradient(to bottom, #368ac2, #7f2bb8);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #d1d6e3;
+  text-decoration: none;
+}
+
+.planetBox {
+	border: solid black 2px;
+	display: inline-block;
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+}
+
+.planetName {
+	color: white;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    position: absolute;
+    margin-top: 134px;
+    width: inherit;
+}
+
+
+
+
+
+
