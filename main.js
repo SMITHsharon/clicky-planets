@@ -1,5 +1,6 @@
 var showPlanets = document.getElementById("showPlanets");
 var output = document.getElementById("planetHolder");
+var planetBoxes = document.getElementsByClassName('planetBox');
 
 var planets = [
 	{
@@ -20,11 +21,11 @@ var planets = [
 	},
 	{
 		name: "Jupiter",
-		url: "https://www.sciencenews.org/sites/default/files/2016/03/main/articles/_031116_cc_jupiter_free.jpg"
+		url: "https://busrahayirsever46blog.files.wordpress.com/2014/04/jpiter.jpg"
 	},
 	{
 		name: "Saturn",
-		url: "http://media.web.britannica.com/eb-media/64/21164-004-85B91671.jpg"
+		url: "https://d13yacurqjgara.cloudfront.net/users/143580/screenshots/2580711/saturn-shot_1x.png"
 	},
 	{
 		name: "Uranus",
@@ -35,7 +36,6 @@ var planets = [
 		url: "https://3c1703fe8d.site.internapcdn.net/newman/gfx/news/2015/thegasandice.jpg"
 	}
 ]
-https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=imgres&cd=&cad=rja&uact=8&ved=0ahUKEwj9iNyR0aLSAhXF4yYKHd5FBCYQjRwIBw&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FNeptune&psig=AFQjCNFuy08RZbWZPbv7rqPWw0jq76EZdA&ust=1487815940147291
 
 
 function writeToDOM(){
@@ -43,8 +43,9 @@ function writeToDOM(){
 	for (var i=0; i<planets.length; i++) {
 		var newPlanet = "";
 		newPlanet += `<div class="planetBox" id="planetBox-${i}">`
-		newPlanet += `<div class="planetName"> ${planets[i].name} </div>`; 
-		newPlanet += `</div>`
+		newPlanet += `<div class="planetName hidden"> ${planets[i].name} </div>`; 
+		newPlanet += `<img class="planetImage" src="${planets[i].url}">`;
+		newPlanet += `</div>`;
 		output.innerHTML += newPlanet;
 
 
@@ -56,4 +57,21 @@ function writeToDOM(){
 	}
 }
 
-showPlanets.addEventListener("click", writeToDOM);
+function showMeTheMoney(event) {
+	if (event.target.className === 'planetImage') {
+		console.log("event worked ", event);
+		console.log("unique ID ", event.target.parentNode.id); // traversing up one level to parent
+		console.log("text? ", event.target.previousSibling);   // traversing to sibling
+		event.target.previousSibling.classList.remove('hidden');
+	}
+}
+
+
+showPlanets.addEventListener("mouseenter", writeToDOM);
+
+document.body.addEventListener("click", showMeTheMoney);
+
+
+
+
+
