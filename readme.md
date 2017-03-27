@@ -5,21 +5,21 @@ This is a simple class application created to demonstrate and discuss coding int
 
 
 #### Clicky Planets Screen Grab on Launch
-![Clicky Planets Screen Grab on Launch](...)
+![Clicky Planets Screen Grab on Launch](https://raw.githubusercontent.com/SMITHsharon/clicky-planets/screens/screens/Clicky%20Planets%20on%20Launch.png)
 
 #### Clicky Planets Screen Grab After Mouseover `Show Me Planets`
-![Clicky Planets Screen Grab After Mouseover Show Me Planets](...)
+![Clicky Planets Screen Grab After Mouseover Show Me Planets](https://raw.githubusercontent.com/SMITHsharon/clicky-planets/screens/screens/Clicky%20Planets%202.png)
 
 #### Clicky Planets Screen Grab After Click on Particular Planet Elements
-![Clicky Planets Screen Grab After Click on Particular Planet Elements](...)
+![Clicky Planets Screen Grab After Click on Particular Planet Elements](https://raw.githubusercontent.com/SMITHsharon/clicky-planets/screens/screens/Clicky%20Planets%20on%20Scroll.png)
 
 
 ### Project Specs
 #### `JavaScript` basics
 `JavaScript` coding syntax and constructs were demonstrated and discussed, including:
-- declared and assigned values to `planets` object array, which included an image file for each planet
+- declared and assigned values to `planets` object array, which includes an image file for each planet
 - `css` styling, including `.btn:hover`, which changes the appearance of the `Show Me Planets` button upon a mouse hover
-- built the entire string of Planets, then wrote to the DOM
+- built the entire string of Planets from `planets` array, then wrote to the DOM
 - all Planets are initialized with `class="planetName hidden"`; when user clicks on a Planet element, the `hidden` class is removed, and value for `planets[i].name` displays in white on the Planet image.
 
 
