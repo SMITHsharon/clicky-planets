@@ -17,9 +17,9 @@ This is a simple class application created to demonstrate and discuss coding int
 ### Project Specs
 #### `JavaScript` basics
 `JavaScript` coding syntax and constructs were demonstrated and discussed, including:
-- declared and assigned values to `planets` object array, which includes an image file for each planet
-- `css` styling, including `.btn:hover`, which changes the appearance of the `Show Me Planets` button upon a mouse hover
-- built the entire string of Planets from `planets` array, then wrote to the DOM
+- declares and assigns values to `planets` object array, which includes an image file for each planet
+- `css` styling, including `.btn:hover`, which changes the appearance of the `Show Me Planets` button upon a mouse `hover`
+- builds the entire string of Planets from `planets` array, then writes to the DOM
 - all Planets are initialized with `class="planetName hidden"`; when user clicks on a Planet element, the `hidden` class is removed, and value for `planets[i].name` displays in white on the Planet image.
 
 
@@ -34,11 +34,9 @@ This is a simple class application created to demonstrate and discuss coding int
 ```
 git clone https://github.com/SMITHsharon/clicky-planets.git
 cd clickyPlanets
-npm install http-server -g
 http-server -p 8080
+This will show in your browser at: http://localhost:8080
 ```
-
-This will show in your browser at: `http://localhost:8080`
 
 
 ### Contributor
